@@ -1,5 +1,5 @@
-#ifndef _KOALANURSE_
-#define _KOALANURSE_
+#ifndef _KOALANURSE_H
+#define _KOALANURSE_H
 
 #include <iostream>
 #include <string>
