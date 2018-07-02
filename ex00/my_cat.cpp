@@ -1,31 +1,30 @@
 #include <iostream>
+#include <string>
+#include <cstring>
 #include <fstream>
+#include <ios>
 
-void my_cat(char **files)
+void	my_cat(char **av)
 {
-	int i = 1;
+	int	count;
+	count = 0;
 	char chara;
-
-	while(files[i])
+	while (av[++count] != NULL)
 	{
-		std::ifstream fd(files[i], std::ios::in);
-		if(fd)
-		{
-			while (fd.get(chara))
-			std::cout << chara;
-		}
+		std::ifstream file(av[count], std::ios::in);
+		if (!file)
+			std::cerr << "my_cat: " << av[count] <<": No such file or directory"<< std::endl;
 		else
-		std::cout << "my_cat: " << files[i] << ": No such file or directory" << std::endl;
-		fd.close();
-		i++;
+		while (file.get(chara))
+			std::cout << chara;
 	}
 }
 
 int main(int ac, char **av)
 {
-	if (ac < 2)
-		std::cout << "my_cat: Usage ./my_cat file [...]" << std::endl;
-	else
+	if (ac >= 2)
 		my_cat(av);
+	else
+		std::cout << "my_cat: Usage : ./my_cat file [...]\n";
 	return 0;
 }
