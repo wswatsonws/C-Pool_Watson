@@ -19,12 +19,12 @@ SickKoala::SickKoala(std::string name)
 
 SickKoala::~SickKoala()
 {
-	std::cout << "Mr. " << this->name << ": Kreooogg !! Je suis gueriiii !" << std::endl;
+	std::cout << "Mr." << this->name << ": Kreooogg !! Je suis gueriiii !" << std::endl;
 }
 
 void SickKoala::poke()
 {
-	std::cout << "Mr. " << this->name << ": Gooeeeeerrk !! :’(" << std::endl;
+	std::cout << "Mr." << this->name << ": Gooeeeeerrk !! :'(" << std::endl;
 }
 
 bool SickKoala::takeDrug(std::string param)
@@ -33,17 +33,17 @@ bool SickKoala::takeDrug(std::string param)
 	transform(param.begin(), param.end(), s.begin(), ::tolower);
 	if ( s == "mars" )
 	{
-		std::cout << "Mr. " << this->name << ": Mars, et ca kreog !" << std::endl;
+		std::cout << "Mr." << this->name << ": Mars, et ca kreog !" << std::endl;
 	}
 
 	else if (param == "Buronzand")
 	{
-		std::cout << "Mr. " << this->name << ": Et la fatigue a fait son temps !" << std::endl;
+		std::cout << "Mr." << this->name << ": Et la fatigue a fait son temps !" << std::endl;
 	}
 	
 	else
 	{
-		std::cout << "Mr. " << this->name << ": Goerkreog !" << std::endl;
+		std::cout << "Mr." << this->name << ": Goerkreog !" << std::endl;
 		return false;
 	}
 	return true;
@@ -56,5 +56,5 @@ void SickKoala::overDrive(std::string message)
 	{
 		message.replace(position, 7, "1337 !", 0, 6);
 	}
-	std::cout << "Mr. " << this->name << ": " << message << std::endl;
+	std::cout << "Mr." << this->name << ": " << message << std::endl;
 }
