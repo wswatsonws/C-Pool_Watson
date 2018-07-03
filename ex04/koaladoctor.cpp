@@ -32,9 +32,20 @@ void	KoalaDoctor::diagnose(SickKoala *SickKoala)
 
 void	KoalaDoctor::timeCheck()
 {
-	if (this->work)
+	/*if (this->work)
 		std::cout << "Dr."<< this->name << ": Je commence le travail !" << std::endl;
 	else if (!this->work)
 		std::cout << "Dr."<< this->name << ": Je rentre dans ma foret d'eucalyptus !" << std::endl;
-	this->work = !this->work;
+	this->work = !this->work;*/
+	
+	if (this->work == false) 
+	{
+		std::cout << "Dr." << this->name << ": Je commence le travail !" << std::endl;
+		this->work = true;
+	} 
+	else 
+	{
+		std::cout<< "Dr." << this->name << ": Je rentre dans ma foret d'eucalyptus !" << std::endl;
+		this->work = false;
+	}
 }
