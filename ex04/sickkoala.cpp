@@ -33,7 +33,7 @@ bool SickKoala::takeDrug(std::string param)
 	transform(param.begin(), param.end(), s.begin(), ::tolower);
 	if ( s == "mars" )
 	{
-		std::cout << "Mr." << this->name << ": Mars, et ca kreog !" << std::endl;
+		std::cout << "Mr." << this->name << ": Mars, et ca Kreog !" << std::endl;
 	}
 
 	else if (param == "Buronzand")
@@ -43,7 +43,7 @@ bool SickKoala::takeDrug(std::string param)
 	
 	else
 	{
-		std::cout << "Mr." << this->name << ": Goerkreog !" << std::endl;
+		std::cout << "Mr." << this->name << ": Goerk !" << std::endl;
 		return false;
 	}
 	return true;

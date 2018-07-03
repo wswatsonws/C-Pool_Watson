@@ -49,3 +49,15 @@ void	KoalaDoctor::timeCheck()
 		this->work = false;
 	}
 }
+
+/*
+int main()
+{
+	KoalaNurse    KoalaNurse(194) ;
+SickKoala     SickKoala("Koko");
+KoalaDoctor	KoalaDoctor("House");
+
+KoalaDoctor.diagnose(&SickKoala);
+ KoalaDoctor.timeCheck();
+ return 0;
+ }*/

@@ -40,7 +40,7 @@ std::string KoalaDoctor::getName()
 {
 	return (this->name);
 }
-
+/*
 int main()
 {
 	KoalaNurse    KoalaNurse(194) ;
@@ -51,4 +51,4 @@ int main()
 	KoalaDoctor.timeCheck();
 	return 0;
 }
-
+*/

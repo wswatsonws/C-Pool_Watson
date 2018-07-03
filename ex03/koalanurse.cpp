@@ -55,12 +55,22 @@ void	KoalaNurse::timeCheck()
 	
 	if (this->work == false) 
 	{
-		std::cout << "Nurse "<< this->ID << ": Je commence le travail !" << std::endl;
+		std::cout << "Nurse "<< this->id << ": Je commence le travail !" << std::endl;
 		this->work = true;
 	} 
 	else 
 	{
-		std::cout << "Nurse "<< this->ID << ": Je rentre dans ma foret d'eucalyptus !" << std::endl;
+		std::cout << "Nurse "<< this->id << ": Je rentre dans ma foret d'eucalyptus !" << std::endl;
 		this->work = false;
 	}
 }
+/*
+int main()
+{
+KoalaNurse	KoalaNurse(194) ;
+SickKoala	SickKoala("Koko");
+KoalaNurse.giveDrug("Mars", &SickKoala);
+KoalaNurse.readReport("truc");
+KoalaNurse.timeCheck();
+return 0;
+}*/
