@@ -60,4 +60,5 @@ KoalaDoctor	KoalaDoctor("House");
 KoalaDoctor.diagnose(&SickKoala);
  KoalaDoctor.timeCheck();
  return 0;
- }*/
+ }
+*/

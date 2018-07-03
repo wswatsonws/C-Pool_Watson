@@ -4,7 +4,7 @@
 KoalaNurse::KoalaNurse(int id)
 {
 	this->id = id;
-	this->work = false;
+	this->work = true;
 }
 
 KoalaNurse::~KoalaNurse()
@@ -46,13 +46,13 @@ return drug;
 
 void	KoalaNurse::timeCheck()
 {
-	/*
+	
 	if (this->work)
 		std::cout << "Nurse "<< this->id << ": Je commence le travail !" << std::endl;
 	else if (!this->work)
 		std::cout << "Nurse "<< this->id << ": Je rentre dans ma foret d'eucalyptus !" << std::endl;
-	this->work = !this->work;*/
-	
+	this->work = !this->work;
+	/*
 	if (this->work == false) 
 	{
 		std::cout << "Nurse "<< this->id << ": Je commence le travail !" << std::endl;
@@ -62,5 +62,5 @@ void	KoalaNurse::timeCheck()
 	{
 		std::cout << "Nurse "<< this->id << ": Je rentre dans ma foret d'eucalyptus !" << std::endl;
 		this->work = false;
-	}
+	}*/
 }

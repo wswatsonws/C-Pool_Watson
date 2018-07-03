@@ -21,15 +21,16 @@ bool SickKoala::takeDrug(std::string s)
 	std::string originName = s;
 	std::transform(s.begin(), s.end(), s.begin(), ::tolower);
 	if (s == "mars") {
-		//std::cout << "Mr."<<this->name<<": Mars, and it  kreogs!\n";
-		std::cout << "Mr." << this->name << ": Mars, et ca kreog !" << std::endl;
+		//std::cout << "Mr." << this->name << ": Mars, et ca Kreog !" << std::endl;
+		std::cout << "Mr." << this->name << ": Mars, et ca Kreog !" << std::endl;
 		return (true);
 	}
 	if (originName == "Buronzand") {
 		std::cout << "Mr." << this->name << ": Et la fatigue a fait son temps !" << std::endl;
 		return (true);
 	}
-	std::cout << "Mr." << this->name<<": Goerkreog !" << std::endl;
+	//std::cout << "Mr." << this->name << ": Goerk !" << std::endl;
+	std::cout << "Mr." << this->name << ": Goerk !" << std::endl;
 	return (false);
 }
 
