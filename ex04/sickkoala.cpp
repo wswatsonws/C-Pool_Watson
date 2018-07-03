@@ -61,5 +61,5 @@ void SickKoala::overDrive(std::string message)
 	{
 		message.replace(position, 7, "1337 !", 0, 6);
 	}
-	std::cout << "Mr. " << this->name << ": " << message << std::endl;
+	std::cout << "Mr." << this->name << ": " << message << std::endl;
 }
