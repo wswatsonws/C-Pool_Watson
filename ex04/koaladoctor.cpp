@@ -38,14 +38,3 @@ void	KoalaDoctor::timeCheck()
 		std::cout << "Dr."<< this->name << ": Je rentre dans ma foret d'eucalyptus !" << std::endl;
 	this->work = !this->work;
 }
-
-int main()
-{
-	KoalaNurse    KoalaNurse(194) ;
-SickKoala     SickKoala("Koko");
-KoalaDoctor	KoalaDoctor("House");
-
-KoalaDoctor.diagnose(&SickKoala);
- KoalaDoctor.timeCheck();
- return 0;
- }
